@@ -22,7 +22,7 @@ class BaseFramework:
 
         if client_ip not in self.clients:
             self.clients.append(client_ip)
-            print(f"Запросов с уникальных IP: {len(self.clients)}")
+            print(f"Новый клиент: {client_ip}")
 
         if path in self.routes:
             view = self.routes[path]
