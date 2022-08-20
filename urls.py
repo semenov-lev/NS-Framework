@@ -1,4 +1,4 @@
-from views import Index
+from views import Index, Contacts
 from datetime import date
 
 
@@ -9,5 +9,6 @@ def data_front(request):
 fronts = [data_front]
 
 routes = {
-    "/": Index()
+    "/": Index(),
+    "/contacts/": Contacts()
 }
