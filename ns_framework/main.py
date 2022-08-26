@@ -38,6 +38,7 @@ class BaseFramework:
         # Получение параметров запроса
         input_data = self.get_input_data(environ)
         request["request_params"] = input_data
+        request["path"] = path
         print(f"Input data: {input_data}")
 
         code, body = view(request)
